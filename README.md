@@ -20,6 +20,6 @@ It is also able to generate a solid mesh for 3D printing (output object as .STL)
 
 ## Usage
 1. Open the .blender
-2. Go script scene run.py script
+2. Go script scene run addon.py script
 3. Enjoy! (and expecting bugs...)
 
