@@ -8,7 +8,8 @@ It is also able to generate a solid mesh for 3D printing (output object as .STL)
 ![image](https://github.com/babyturtleeee/Math-teaching-tool/assets/92495580/3f2e2534-848c-4cae-a458-cd4b86ec2ae4)
 
 
-![image](https://github.com/babyturtleeee/Math-teaching-tool/assets/92495580/3d97bb20-1eba-4e1f-ab16-f8919c9d411f)
+![ezgif-2-ae4abaafca](https://github.com/babyturtleeee/Math-teaching-tool/assets/92495580/a5619c32-6450-46cb-9ff8-264ce31636e8)
+
 
 ## Installation
 1. Download the .blend and .py files in the repo
