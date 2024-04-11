@@ -8,4 +8,5 @@ This is a tool to visualize math functions in real-time embedded in Blender. Add
 ## Installation
 1. Download the .blend and .py files in the repo
 2. Install ALL 3rd party addon dependencies and python library dependencies
+
    Addon: 
