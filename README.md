@@ -8,7 +8,7 @@ It is also able to generate a solid mesh for 3D printing (output object as .STL)
 ![image](https://github.com/babyturtleeee/Math-teaching-tool/assets/92495580/3f2e2534-848c-4cae-a458-cd4b86ec2ae4)
 
 
-Animation:
+Real-time Rendering in Blender Scene:
 
 ![ezgif-2-ae4abaafca](https://github.com/babyturtleeee/Math-teaching-tool/assets/92495580/a5619c32-6450-46cb-9ff8-264ce31636e8)
 
