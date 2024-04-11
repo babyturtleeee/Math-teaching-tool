@@ -17,4 +17,7 @@ This is a tool to visualize math functions in real-time embedded in Blender. Add
 
 
 ## Usage
+1. Open the .blender
+2. Go script scene run.py script
+3. Enjoy!
 
