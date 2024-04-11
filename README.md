@@ -3,7 +3,7 @@ MANU 453 Project Assessment - Math course teaching tool!
 
 This is a tool to visualize math functions in real-time embedded in Blender. Added functionalities such as finding maximum and minimum, plotting gradient descent path as an animation...
 
-![image](https://github.com/babyturtleeee/Math-teaching-tool/assets/92495580/64c2c327-30bd-4fed-9fe3-64cbe600cff0)
+![image](https://github.com/babyturtleeee/Math-teaching-tool/assets/92495580/3f2e2534-848c-4cae-a458-cd4b86ec2ae4)
 
 ## Installation
 1. Download the .blend and .py files in the repo
