@@ -250,14 +250,6 @@ def extrude_surface_down(surface_obj, z):
 
     print("Duplicated surface extruded down to z = {}.".format(z))
 
-def PanelRegistration():
-    bpy.utils.register_class(DRAGGABLEPROP_OT_subscribe)  # Register modal operator
-    bpy.utils.register_class(TEST_PT_draggable_prop)  # Register Panel to see what's going on
-    bpy.utils.register_class(DraggableProp)  # Register our custom prop
-    bpy.utils.register_class(Extrusion_operator)  # Register our custom prop
-    bpy.utils.register_class(Maxmin_operator)  # Register our custom prop
-    bpy.types.Scene.my_prop = bpy.props.PointerProperty(type=DraggableProp)  # Setup our custom prop
-
 class Maxmin_operator(Operator):
     bl_idname = "object.maxmin"
     bl_label = "Find max and min"
@@ -272,7 +264,6 @@ class Maxmin_operator(Operator):
         return {'FINISHED'}
     
 class Extrusion_operator(Operator):
-    """ tooltip goes here """
     bl_idname = "object.output"
     bl_label = "Generate 3D Printing File"
 
@@ -329,14 +320,14 @@ class Extrusion_operator(Operator):
 class DRAGGABLEPROP_OT_subscribe(bpy.types.Operator):
     bl_idname  = "draggableprop.subscribe"
     bl_label   = ""
-    stop: bpy.props.BoolProperty()  # This is used so we don't end up in an infinite loop because we blocked the release event
+    stop: bpy.props.BoolProperty()  
 
     def modal(self, context, event):
         if self.stop:
             context.scene.my_prop.is_dragging = False
             print("End Dragging !")
             return {'FINISHED'}
-        if event.value == 'RELEASE':  # Stop the modal on next frame. Don't block the event since we want to exit the field dragging
+        if event.value == 'RELEASE':  
             self.stop = True
 
         return {'PASS_THROUGH'}
@@ -440,7 +431,15 @@ class DraggableProp(bpy.types.PropertyGroup):
     text_scale: bpy.props.FloatProperty(name = "Text Scale", update=update_prop, min=-0, max=5,default = 1.5)
     
     is_dragging: bpy.props.BoolProperty()
-
+    
+def PanelRegistration():
+    bpy.utils.register_class(DRAGGABLEPROP_OT_subscribe)  # Register modal operator
+    bpy.utils.register_class(TEST_PT_draggable_prop)  # Register Panel to see what's going on
+    bpy.utils.register_class(DraggableProp)  # Register our custom prop
+    bpy.utils.register_class(Extrusion_operator)  # Register our custom prop
+    bpy.utils.register_class(Maxmin_operator)  # Register our custom prop
+    bpy.types.Scene.my_prop = bpy.props.PointerProperty(type=DraggableProp)  # Setup our custom prop
+    
 def main():
     purge_orphans()
     enable_addon(addon_module_name="add_mesh_extra_objects")
