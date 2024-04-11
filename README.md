@@ -15,7 +15,8 @@ It is also able to generate a solid mesh for 3D printing (output object as .STL)
 
    Libraries: Numpy; Scipy; Sympy
 
-   Handy 3rd party addon to install libraries: [CGfigures](https://cgfigures.gumroad.com/l/pymodinstall)
+   Handy 3rd party addon to install libraries: [CGfigures](https://cgfigures.gumroad.com/l/pymodinstall) [Tutorial](https://www.youtube.com/watch?v=DSRha-8Zk8w)
+
 
 
 ## Usage
