@@ -410,9 +410,9 @@ class TEST_PT_draggable_prop(bpy.types.Panel):
         
 
 class DraggableProp(bpy.types.PropertyGroup):
-    A: bpy.props.IntProperty(update=update_prop, min=-100, max=100)
-    B: bpy.props.IntProperty(update=update_prop, min=-100, max=100)
-    C: bpy.props.IntProperty(update=update_prop, min=-100, max=100)
+    A: bpy.props.FloatProperty(update=update_prop, min=-100, max=100)
+    B: bpy.props.FloatProperty(update=update_prop, min=-100, max=100)
+    C: bpy.props.FloatProperty(update=update_prop, min=-100, max=100)
     x: bpy.props.FloatProperty(update=update_prop, min=0, max=100,default = 1.0)
     y: bpy.props.FloatProperty(update=update_prop, min=0, max=100,default = 1.0)
     
