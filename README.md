@@ -14,3 +14,7 @@ This is a tool to visualize math functions in real-time embedded in Blender. Add
    Libraries: Numpy; Scipy; Sympy
 
    Handy 3rd party addon to install libraries: [CGfigures](https://cgfigures.gumroad.com/l/pymodinstall)
+
+
+## Usage
+
